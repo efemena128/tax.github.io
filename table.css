@@ -1,0 +1,75 @@
+body {
+  font-family: 'Source Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+article, form {
+  padding: 10px;
+  margin: 10px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+label {
+  padding-top: 5px;
+}
+
+.tax-input-container {
+  display: flex;
+}
+
+.tax-input {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.button {
+  color: white;
+  margin: 20px auto;
+  background: #00bfe1;
+  border: 1px solid #00bfe1;
+  border-radius: 5px;
+  padding: 9px 30px;
+  font-size: 1.3em;
+  line-height: 1.2852;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    background:  #16ccec;
+    border-color: #16ccec;
+    outline: none;
+  }
+}
+
+.message-container {
+  text-align: center;
+}
+
+.message {
+  display: none;
+  color: #00bfe1;
+  font-weight: 600;
+}
+
+.show {
+  display: block;
+}
+
+.lowest-tax {
+  background: #00bfe1;
+  
+  label {
+    color: white; 
+  }
+  
+  input {
+    border-color: #00bfe1;
+  }
+}

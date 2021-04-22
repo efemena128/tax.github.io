@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+      <link href="table.css" rel="stylesheet">
+          <script src="cal.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+  <form id="taxCalc" action="#">
+    <h1>Tax Calculator</h1>
+    <div class="tax-input-container">
+      <div class="tax-input tax-input--income">
+        <label>Annual Income</label>
+        <input id="income" type="number" placeholder="125000" />
+      </div>
+      <div class="tax-input tax-input--foo">
+        <label>"Federal" Tax Burden</label>
+        <input type="text" readonly="true" id="foo-tax" step="0.01" />
+      </div>
+      <div class="tax-input tax-input--bar">
+        <label>"State" Tax Burden</label>
+        <input type="text" readonly="true" id="bar-tax" step="0.01" />
+      </div>
+    </div>
+
+    <div class="tax-input-container">
+      <input class="button" type="submit" onclick="submitIncome();return false" />
+    </div>
+    <div class="message-container">
+      <p class="message message--foo">You would pay less tax under the Federal Plan.</p>
+      <p class="message message--bar">You would pay less tax under the State Plan.</p>
+      <p class="message message--equal">You would pay the same tax rate under both plans.</p>
+    </div>
+  </form>
+</div>
+
+</body>
+</body>
+</html>
